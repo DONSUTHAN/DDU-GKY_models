@@ -1,0 +1,25 @@
+*{
+    margin: 2px;
+}
+    
+   .bodie {
+        background-color: black;
+        color: white;
+    }
+    .justifi {
+        display: flex;
+        justify-content: left;
+        gap: 6px;
+        
+        
+    }
+    .tags {
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+    .img1 {
+        position: absolute;
+        background-position: center;
+    }
