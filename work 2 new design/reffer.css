@@ -1,0 +1,105 @@
+ /* General Styles */
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f2;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: white;
+        }
+        .logo { font-weight: bold; font-size: 24px; color: #4a7c44; }
+        .nav-links a { 
+            margin: 0 15px;
+             text-decoration: none; 
+             color: #555;
+              font-size: 14px; }
+
+        .btn-get { background: #4a7c44; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; }
+
+        /* Hero Section */
+        .hero {
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 10%;
+            color: white;
+        }
+        .hero h1 { font-size: 48px; max-width: 500px; margin-bottom: 10px; }
+        .hero p { max-width: 400px; margin-bottom: 20px; }
+        .btn-hero { background: #6b8e23; color: white; padding: 12px 25px; border-radius: 25px; border: none; cursor: pointer; }
+
+        /* Search Bar */
+        .search-container {
+            width: 80%;
+            margin: -40px auto 0;
+            background: #e1eccd;
+            padding: 20px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .search-container input { border: none; padding: 10px; border-radius: 5px; width: 30%; }
+        .btn-search { background: #4a7c44; color: white; border: none; padding: 10px 30px; border-radius: 25px; }
+
+        /* Main Section */
+        .welcome-section {
+            display: flex;
+            padding: 80px 10%;
+            align-items: center;
+            gap: 50px;
+        }
+        .welcome-img {
+             width: 45%;
+              border-radius: 20px;
+             }
+        .welcome-text {
+             width: 45%;
+             }
+        .welcome-text h2 {
+             color: #2d4a2a;
+             }
+
+        /* Cards Section */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 10%;
+            background: #eef3e8;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .card img { 
+            width: 100%;
+             border-radius: 15px;
+              height: 180px; 
+              object-fit: cover; 
+        }
+        .btn-card {
+             background: #5a8a54; 
+             color: white;
+              border: none;
+              padding: 8px 20px; 
+              border-radius: 15px; 
+              margin-top: 10px; 
+            }
