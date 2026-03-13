@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Reel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="reel-viewport">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Reel Background" class="reel-photo">
+
+        <div class="side-bar">
+            <label class="action-item">
+                <input type="checkbox" hidden id="like-check">
+                <i class="fa-solid fa-heart heart-icon"></i>
+                <span>1.2k</span>
+            </label>
+
+            <div class="action-item">
+                <i class="fa-solid fa-comment"></i>
+                <span>85</span>
+            </div>
+
+            <div class="action-item">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Share</span>
+            </div>
+
+            <label class="action-item">
+                <input type="checkbox" hidden id="save-check">
+                <i class="fa-solid fa-bookmark bookmark-icon"></i>
+            </label>
+        </div>
+
+        <div class="reel-footer">
+            <h3>@pure_css_reels</h3>
+            <p>No Javascript needed for this UI! 🚀 #css #design</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

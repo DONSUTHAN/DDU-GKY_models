@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+}
+.imgess{
+    background: url("./pic2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

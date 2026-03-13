@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    display: flex;
+}
+.head{
+    display: flex;
+} */
+ section{
+    display: flex;
+    justify-content: space-between;
+ }
+
+a{
+   text-decoration: none;
+    color: chartreuse;
+}
+.navllinks{
+    display: flex;
+    /* justify-content: end; */
+    gap: 45px;
+    padding-top: 9px;
+
+   
+}
+section{
+    background-color:brown;
+}
+a:hover{
+    transform: translateY(4px);
+}

@@ -1,0 +1,6 @@
+
+let a = 1 
+b = 3
+c = 
+console.log(c = a +"a to c");
+console.log(a = b +"b to a" );

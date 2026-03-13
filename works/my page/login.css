@@ -1,0 +1,19 @@
+.box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.box p{
+    margin: 0;
+}
+      
+.btn {
+    text-align: center;
+}
+h1 {
+    color: blue; 
+    text-align: center;
+}
+.imp {
+    text-align: center;
+}

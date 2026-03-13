@@ -1,0 +1,14 @@
+@media screen and (max-width :768px) {
+    .para{
+        display:none
+    }
+    .welcome_section{
+        display: none;
+    }
+    nav .navlinks{
+        display: none;
+    }
+    .containcard{
+        background-color: blue;
+    }
+}

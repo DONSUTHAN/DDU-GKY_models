@@ -1,0 +1,23 @@
+*{
+    margin: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: greenyellow;
+}
+.nav{
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.nav1{
+    padding-left: 46%;
+    align-items: center;
+}
+
+.mainsection{
+    background-image: url("")
+    
+}

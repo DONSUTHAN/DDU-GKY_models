@@ -1,0 +1,9 @@
+let  user = 16 ;
+ if (user > 18) {
+    console.log("for vote");
+    
+ }
+ else {(21 > user)
+   console.log("not vote ");
+   
+ }

@@ -51,10 +51,10 @@
 }
 @media (max-width:1024px) {
     .section4{
-        grid-template-columns: 1fr 1fr 1fr;
+        flex: none;
     }
     .section5{
-        grid-template-columns: 1fr 1fr 1fr;
+        flex: none;
     }
 
 

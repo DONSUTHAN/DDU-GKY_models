@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mainsection2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
