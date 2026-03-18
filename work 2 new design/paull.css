@@ -132,3 +132,37 @@ a{
 .para{
     text-align: center;
 }
+
+.conatainer2{
+    display: flex;
+}
+section{
+    max-width: 100px;
+    margin: auto;
+}
+.panel{
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.5s ease;
+    flex: 0.5;
+}
+.panel h3{
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel .enable{
+    flex: 5;
+}
+.panel.enabl.h3{
+    opacity: 1;
+    transition: opacity 3.1s ease 0.4s;
+}
