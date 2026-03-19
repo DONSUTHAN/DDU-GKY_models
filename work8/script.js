@@ -1,21 +1,16 @@
 // const panels = document.querySelectorAll('panel')
-
 // panels.forEach(panel => {
-//     panel.addEventListener('click',()=> {
+//     panel.addEventListener('click',() => {
 //         removeclass()
-
 //         panel.classList.add('enable')
 //     })
 // })
 
-// function removeclass(){
+// function removeclass() {
 //     panels.forEach(panel => {
 //         panel.classList.remove('enable')
 //     })
 // }
-
-
-// starts here
 
 const panels = document.querySelectorAll('.panel')
 panels.forEach(panel => {
