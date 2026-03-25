@@ -1,6 +1,22 @@
-body{
+/* body {
     background-image: url("./pic1.jpg");
-    /* background-image: url("./pic2.jpg"); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+/* h1 {
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+} */
+img{
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cards{
+    display: grid;
+    grid-template-columns:repeat(3 ,1fr);
 }

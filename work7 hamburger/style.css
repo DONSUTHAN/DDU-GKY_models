@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav{
+    z-index: 10;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+/* Hameburger */
+
+.humburger{
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+.humburger span{
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+/* ANIMATION */
+
+.humburger.active span:nth-child(1){
+    transform: rotate(45deg) translate(5px,5px);
+}
+
+.humburger.active span:nth-child(2){
+    opacity: 0;
+}
+
+.humburger.active span:nth-child(3){
+    transform: rotate(-45deg) translate(7px,-6px);
+}
+
+/* MOBILE MENU */
+
+@media (max-width:768px) {
+    .humburger {
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #444;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav.active{
+        max-height: 300px;
+    }
+}

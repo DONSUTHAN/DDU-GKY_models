@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"
+                style="background:url(pic2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                Slide 1</div>
+            <div class="swiper-slide"
+                style="background:url(pic2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                Slide 2</div>
+            <div class="swiper-slide"
+                style="background:url(pic2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+<script src="./script.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.nrt/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.swiper', {
+
+            // cube
+            effect: 'cube',
+            cubeEffect: {
+                slideShadows: false,
+            },
+            // autoplay
+            autoplay: {
+                delay: 500,
+            },
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script> -->
+</body>
+
+</html>
