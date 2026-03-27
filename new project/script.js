@@ -13,14 +13,15 @@ panel.classList.remove('enable')
 })
 }
 
-////swiper
-  
-// 'https://cdn.jsdelivr.nrt/npm/swiper@12/swiper-bundle.min.js'
-    
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+//////swipers here
+
+
+
+ 
+
 
 const swiper = new Swiper('.swiper', {
-
+  
   // cube
   effect: 'cube',
   cubeEffect: {
@@ -28,7 +29,7 @@ const swiper = new Swiper('.swiper', {
   },
   // autoplay
   autoplay: {
-    delay: 500,
+    delay: 1200,
   },
   // Optional parameters
   direction: 'horizontal',
@@ -40,14 +41,13 @@ const swiper = new Swiper('.swiper', {
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
 
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
 });
-  

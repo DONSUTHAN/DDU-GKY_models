@@ -16,7 +16,7 @@ body {
     border-radius: 4PX;
 }
 
-footer {
+header {
     align-items: center;
     background-color: rgb(199, 199, 198);
     border-radius: 4px;
@@ -24,7 +24,7 @@ footer {
     justify-content: space-around;
 }
 
-footer ul {
+header ul {
     display: flex;
     gap: 45px;
 }
@@ -128,6 +128,7 @@ section {
     transition: opacity 3.1s ease 0.4s;
 }
 
+/* swiper */
 
 .swiper{
     width: 50vw;
