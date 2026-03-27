@@ -10,9 +10,10 @@
 
 <body>
     <div class="container">
-        <header>
+        <footer>
             <div class="logo">
-            <img src="./green.webp" alt=""></div>
+                <img src="./green.webp" alt="">
+            </div>
 
             <nav>
                 <ul style="list-style: none;">
@@ -25,28 +26,29 @@
 
             <!-- <div class="images">
                 <img src="./stage3.jpg" alt=""></div> -->
-        </header>
+        </footer>
 
-            
-            <div class="sect">
-                <div class="para1">
-                    my project with some confidence <br>i have going to make some thing here <br>stay tuned i ....... <br>
-                <button >click here</button>
-                </div>
-
+        <div class="sect">
+            <div class="para1">
+                my project with some confidence <br>i have going to make some thing here <br>stay tuned i ....... <br>
             </div>
-
-        
-
+            <br>
+            <div class="buttonss">
+                <button class="btn">click here</button>
+            </div>
+        </div>
+        <br>
+        <br>
 
         <div class="part1">
             <div class="img">
                 <div class="containcards">
-                    <img src="./green.webp" alt="">
+
                     <div class="para">
+                        <img src="./home2.jpeg" alt="">
                         <h3>just for fun</h3>
                         <p>if ur an intro^%t</p>
-                        <button type="btn">view mhoreeh</button>
+                        <button class="btn">view </button>
                     </div>
                 </div>
 
@@ -54,11 +56,11 @@
 
             <div class="img">
                 <div class="containcards">
-                    <img src="./green.webp" alt="">
                     <div class="para">
+                        <img src="./home2.jpeg" alt="">
                         <h3>just for fun</h3>
                         <p>if ur an intro^%t</p>
-                        <button type="btn">view mhoreeh</button>
+                        <button class="btn">view </button>
                     </div>
                 </div>
 
@@ -66,47 +68,51 @@
 
             <div class="img">
                 <div class="containcards">
-                    <img src="./green.webp" alt="">
                     <div class="para">
+                        <img src="./home2.jpeg" alt="">
                         <h3>just for fun</h3>
                         <p>if ur an intro^%t</p>
-                        <button type="btn">view mhoreeh</button>
+                        <button class="btn">view </button>
                     </div>
                 </div>
 
             </div>
 
-            <div class="img">
-                <div class="containcards">
-                    <img src="./green.webp" alt="">
-                    <div class="para">
-                        <h3>just for fun</h3>
-                        <p>if ur an intro^%t</p>
-                        <button type="btn">view mhoreeh</button>
-                    </div>
-                </div>
-            </div>
         </div>
+        <section>
 
-        <div class="expanding">
-    
-            <div class="panel-enable" style="background: url(stage3.jpg);">
-                <h3>explore the world</h3>
+            <div class="expanding">
+
+                <div class="panel enable" style="background-image: url(./stage3.jpg);">
+                    <h3>explore world</h3>
+                </div>
+
+                <div class="panel" style="background-image: url(./stage3.jpg);">
+                    <h3>explore world</h3>
+                </div>
+
+                <div class="panel" style="background-image: url(./stage3.jpg);">
+                    <h3>explore world</h3>
+                </div>
+
+                <div class="panel" style="background-image: url(./stage3.jpg);">
+                    <h3>explore world</h3>
+                </div>
+
+                <div class="panel" style="background-image: url(./stage3.jpg);">
+                    <h3>explore world</h3>
+                </div>
+
+                <div class="panel" style="background-image: url(./stage3.jpg);">
+                    <h3>explore world</h3>
+                </div>
+
+
+
+
             </div>
 
-            <div class="panel" style="background:url(stage3.jpg);">
-                <h3>explore the world</h3>
-            </div>
-
-            <div class="panel" style="background:url(stage3.jpg);">
-                <h3>explore the world</h3>
-            </div>
-
-            <div class="panel" style="background:url(stage3.jpg);">
-                <h3>explore the world</h3>
-            </div>
-            
-        </div>
+        </section>
 
         <div class="swipers">
             <!-- Slider main container -->
@@ -115,15 +121,18 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide"
-                        style="background:url(pic2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
-                        Slide 1</div>
+                        style="background:url(./stage3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                        Slide 1
+                    </div>
                     <div class="swiper-slide"
-                        style="background:url(pic2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
-                        Slide 2</div>
+                        style="background:url(./stage3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                        Slide 2
+                    </div>
                     <div class="swiper-slide"
-                        style="background:url(pic2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
-                        Slide 3</div>
-                    ...
+                        style="background:url(./stage3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                        Slide 3
+                    </div>
+
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -135,6 +144,42 @@
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div>
+
+            <script>
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+
+                const swiper = new Swiper('.swiper', {
+
+                    // cube
+                    effect: 'cube',
+                    cubeEffect: {
+                        slideShadows: false,
+                    },
+                    // autoplay
+                    autoplay: {
+                        delay: 500,
+                    },
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            </script>
             <script src="./script.js" type="module"></script>
 
             <script src="https://cdn.jsdelivr.nrt/npm/swiper@12/swiper-bundle.min.js"></script>

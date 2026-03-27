@@ -1,35 +1,40 @@
-*{
+* {
     margin: 1;
     padding: 0;
 }
-body{
-    background-color: darkolivegreen;
+
+body {
+    background-color: rgb(58, 47, 107);
 }
+
 /* img{
     width: 100%;
 } */
 
-.logo img{
+.logo img {
     width: 20%;
     border-radius: 4PX;
 }
-header{
-    align-items: center;
-    background-color:darkorange;
-    border-radius: 45px;
-    display: flex;
-    justify-content:space-around;
-}
- nav ul{
 
+footer {
+    align-items: center;
+    background-color: rgb(199, 199, 198);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
     display: flex;
     gap: 45px;
 }
+
 .images {
     width: 1px;
 }
-.sect{
-    background-image: url("./green.webp");
+
+.sect {
+    background-image: url("./stage3.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -37,7 +42,100 @@ header{
     /* display: flex;
     flex-direction: column; */
 }
-.para1{
+
+.para1 {
     text-align: center;
+    padding-top: 45px;
+    color: crimson;
     /* padding-top: ; */
+}
+
+.buttonss {
+    padding-left: 47%;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 14px;
+    color: cornsilk;
+    background-color: rgb(88, 57, 19);
+}
+
+.part1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    justify-content: space-around;
+
+}
+
+.containcards {
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.containcards .img {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 180px;
+
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expanding {
+    display: flex;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.5s ease;
+    flex: 0.5;
+}
+
+.panel h3 {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.enable {
+    flex: 5;
+}
+
+.panel.enable h3 {
+    opacity: 1;
+    transition: opacity 3.1s ease 0.4s;
+}
+
+
+.swiper{
+    width: 50vw;
+    height: 50vh;
+    margin-top:25vh;
+}
+.swiper-slide{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
 }
