@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style .css">
 </head>
+
 <body>
-     <h1>login form</h1>
+    <h1>login form</h1>
     <div class="container">
-       
+
         <div class="card">
-    <form id="my form">
-        <input type="text" id="name" placeholder="Enter name"><br><br>
+            <form id="my form">
+                <input type="text" id="name" placeholder="Enter name"><br><br>
 
-        <input type="text" id="email" placeholder="enter the Email"><br><br>
+                <input type="text" id="email" placeholder="enter the Email"><br><br>
 
-        <input type="password" id="password" placeholder="Enter password"><br><br>
+                <input type="password" id="password" placeholder="Enter password"><br><br>
 
-        <!-- ....Gender.....-->
+                <!-- ....Gender.....-->
 
-        <label>Gender:</label><br>
-        
-        <input type="radio" name="gender" value="male">male
+                <label>Gender:</label><br>
 
-        <input type="radio" name="gender" value = "female">female
-        <br><br>
+                <input type="radio" name="gender" value="male">male
 
-        <!-- ....drpdown... -->
-         
-        <label >select country:</label><br>
+                <input type="radio" name="gender" value="female">female
+                <br><br>
 
-        <select  id="country">
+                <!-- ....drpdown... -->
 
-            <option value="">--select country---</option>
-            <option value="india">india</option>
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
+                <label>select country:</label><br>
 
-        </select>
+                <select id="country">
 
-        <br><br>
-        
-        <!-- ...Ckeckbox... -->
+                    <option value="">--select country---</option>
+                    <option value="india">india</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
 
-        <input type="checkbox" id="terms">i agree to terms and conditons
-        <br><br>
+                </select>
 
-        <button type="submit">Submit</button>
+                <br><br>
 
-    </form>
+                <!-- ...Ckeckbox... -->
+
+                <input type="checkbox" id="terms">i agree to terms and conditons
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <p id="error" style="color: red;"></p>
+            </form>
+            
+        </div>
     </div>
-    </div>
-        <p id="error" style="color: red;"></p>
+    
 
     <script src="./form.js"></script>
 </body>
+
 </html>
