@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    gap: 34px;
+}
+ul{
+    /* here give hover */
+    display: flex;
+    gap: 34px;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.section1{
+    /* give hover here */
+}
+.section2{
+    padding: 13px;
+    background-color:rgb(75, 99, 165);
+    width: 70%;
+}
+.inputs{
+    /* display: flex; */
+    padding: 10px;
+}
+.nametype{
+    width: 100%;
+}
+.DOB{
+    padding-left: 10px;
+}
