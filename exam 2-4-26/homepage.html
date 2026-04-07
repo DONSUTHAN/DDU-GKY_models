@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web</title>
+    <style>
+      body
+      {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      
+      .navbar
+      { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #333;
+        color: white; 
+      }
+
+      .navlinks a
+      {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+
+      .connect_btn
+      {
+        border-radius: 20px;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+
+      .hero
+      {
+        height: 100vh;
+        background: url(home_1.jpg) center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+      .hero h1
+      {
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+
+      .hero p
+      {
+        font-size: 1.5rem;
+      }
+
+      .footer
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px 30px;
+        background-color: #222;
+        color: white;
+        min-height: 100px;
+      }
+
+      .footer a 
+      { 
+        color: #4DA8DA;
+        text-decoration: none; }
+    </style>
+    
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MyLogo</div>
+    <div class="navlinks">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+    </div>
+    <button class="connect_btn">Connect</button>
+  </nav>
+
+  <header class="hero">
+    <h1>Main Title</h1>
+    <p>Hero section description.</p>
+  </header>
+
+  <footer class="footer">
+    <div class="logo-bottom">MyLogo</div>
+    <a href="#">Contact Us</a>
+  </footer>
+
+</body>
+</html>
