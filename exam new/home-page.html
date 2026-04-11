@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: black;
+            color: white;
+        }
+        .navlinks a 
+        {
+            color: white;
+            text-decoration: none;
+            margin:  0 15px;
+        }
+        .connect_btn
+        {
+
+            border-radius: 24px;
+            padding: 8px  15px;
+            cursor: pointer;
+        }
+        .first
+      {
+        height: 100vh;
+        background: url(home_1.jpg) center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+      .first h1
+      {
+        font-size: 4rem;
+        margin-bottom:10px ;
+      }
+      .first p{
+        font-size:1.5rem;
+      }
+      .footer
+      {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px 30px;
+        background-color: #222;
+        color: white;
+        min-height: 100px;
+      }
+      .footer
+      {
+        color: green;
+        text-decoration: none
+      }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <nav class="navbar">
+            <div class="log">my logo</div>
+            <div class="navlinks">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">services</a>
+            </div>
+            <button class="connect_btn">connet</button>
+        </nav>
+        <div class="img">
+                <img src="./stage3.jpg" style="width: 100%;">
+                <div class="absolute" style="display: flex; position: absolute;">
+                    <h2 style="display: flex;justify-content: center;">title</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem laboriosam fugiat inventore ipsam, facere quasi assumenda hic esse. Expedita explicabo quasi illo placeat mollitia tempora vel accusantium laboriosam odit.</p>
+                </div>
+        </div>
+        <header class="first">
+            <h1>main title</h1>
+            <p>first section description</p>
+        </header>
+
+        <footer class="footer">
+            <div class="logo-bottom">my logo</div>
+            <a href="#">contact usss</a>
+        </footer>
+    </div>
+
+</body>
+</html>

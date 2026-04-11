@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+      body
+      {
+        background-color: indigo;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+
+      .form_container
+      {
+        border: 1px solid #521e1e;
+        padding: 20px;
+        border-radius: 8px;
+        width: 609px;
+        background: #148374;
+      }
+
+      .form_group, .form_group_checkbox, .form_group_radio
+      {
+        margin-bottom: 15px;
+      }
+
+      .form_group label, .form_group_checkbox label, .form_group_radio label
+      {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form_group input
+      {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box; 
+      }
+
+      .error 
+      {
+        color: rgb(177, 143, 105);
+        font-size: 0.8em;
+        margin-top: 5px;
+      }
+      .center
+      {
+        color: yellow;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="form_container">
+    <h2>Register</h2>
+    <form id="form_id">
+      
+      <div class="form_group">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter Name">
+      </div>
+
+      <div class="form_group">
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter Email">
+      </div>
+
+      <div class="form_group">
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="Enter Password">
+      </div>
+
+      <div class="form_group_radio">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+      </div>
+
+      <div class="form_group_checkbox">
+        <label>Hobbies:</label>
+        <input type="checkbox" value="hiking"> Reading
+        <input type="checkbox" value="gaming"> gaming
+        <input type="checkbox" value="traveling"> traveling
+        <input type="checkbox" value="music listening"> Music listenig
+      </div>
+
+      <p id="error" class="error"></p>
+      <div class="center">
+      <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    let form_id = document.getElementById('form_id');
+    form_id.addEventListener('submit', function(parameter){
+    parameter.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const gender = document.querySelector('input[name="gender"]:checked');
+      const hobbies = document.querySelectorAll('input[type="checkbox"]:checked');
+      const error = document.getElementById('error'); 
+      error.textContent = "";
+ 
+      if (name=="" || email=="" || password=="" || !gender || hobbies.length === 0) {
+        error.textContent = 'Please fill in all fields';
+      }
+      
+      else alert('Form submitted successfully!');
+
+    });
+  </script>
+
+</body>
+</html>
