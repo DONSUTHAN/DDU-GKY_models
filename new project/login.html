@@ -6,7 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>login from</h1>
+    <div class="container">
+        <div class="cards">
+            <form id="my form">
+                <input type="text" id="name"placeholder="Enter name">
+
+                <input type="text" id="email"placeholder="Enter Email">
+
+                <input type="text" id="password"placeholder="Enter password">
+
+                <!-- ......Gender..... -->
+
+                <label for="">Gender:</label>
+
+                <input type="radio" name="gender" value="male">Male
+
+                <input type="radio" name="gender" value="female">Female
+                <br><br>
+
+                <!-- dropdown -->
+
+                <label for="">Select Country</label><br>
+
+                <select name="" id="country">
+                    <option value="">------Select country----- </option>
+                    <option value="india">INDIA</option>
+                    <option value="india">USA</option>
+                    <option value="india">UK</option>
+                    
+                </select>
+
+                <br><br>
+
+                <!-- checkbox -->
+
+                <input type="checkbox" id="terms">i agree to terms and conditions
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <p id="error" style="color: red;"></p>
+            </form>
+        </div>
+
+    </div>
     
     <script src="./login.js"></script>
 </body>

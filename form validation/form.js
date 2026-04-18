@@ -35,7 +35,7 @@ if (country === ""){
 
 let emailPattern= /^[^]+@[^]+\.[a-z]{2,3}$/;
 if(!email.match(emailPattern)){
-    error.innerText ="Enter valid eamil";
+    error.innerText ="Enter valid Email";
     return;
 }
 
@@ -66,3 +66,6 @@ if(!terms) {
 
 alert("Form submitted successfully");
 });
+
+// hello for you 
+// incase i don't good morning ,good afternoon,good evening and good night
