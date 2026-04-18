@@ -6,24 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>combined prtoject</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
     <div class="container">
+
         <header>
+            <div class="logo">My site</div>
+
             <div class="logo">
                 <img src="./green.webp" alt="">
             </div>
 
-            <nav>
+
+            <div class="humburger" id="humburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#" style="text-decoration: none;">Home</a></li>
+                    <li><a href="#" style="text-decoration: none;">About</a></li>
+                    <li><a href="#" style="text-decoration: none;">Service</a></li>
+                    <li><a href="#" style="text-decoration: none;">Contact</a></li>
+                    <li><a href="login.html" style="text-decoration: none; ">log in</a></li>
+                    <!-- <li><a href="#" style="text-decoration: none;">sign up</a></li>
+                    <li><a href="#" style="text-decoration: none;">contact</a></li>
+                    <li><a href="#" style="text-decoration: none;">hightlights</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <header>
+
+            <!-- <nav>
                 <ul style="list-style: none;">
                     <li><a href="login.html" style="text-decoration: none; ">log in</a></li>
                     <li><a href="#" style="text-decoration: none;">sign up</a></li>
                     <li><a href="#" style="text-decoration: none;">contact</a></li>
                     <li><a href="#" style="text-decoration: none;">hightlights</a></li>
                 </ul>
-            </nav>
+            </nav> -->
 
             <!-- <div class="images">
                 <img src="./stage3.jpg" alt=""></div> -->
@@ -31,7 +57,7 @@
 
         <div class="sect">
             <div class="para1">
-                my project with some confidence <br>i have going to make some thing here <br>stay tuned i ....... <br>
+                simple perfect homes avilable for our customers <br>perfect homes....... <br>
             </div>
             <br>
             <div class="buttonss">
@@ -47,8 +73,8 @@
 
                     <div class="para">
                         <img src="./home2.jpeg" alt="">
-                        <h3>just for fun</h3>
-                        <p>if ur an intro^%t</p>
+                        <h3>homes 1</h3>
+                        <p>moderate homes with perfect interior </p>
                         <button class="btn">view </button>
                     </div>
                 </div>
@@ -59,8 +85,8 @@
                 <div class="containcards">
                     <div class="para">
                         <img src="./home2.jpeg" alt="">
-                        <h3>just for fun</h3>
-                        <p>if ur an intro^%t</p>
+                        <h3>homes 2</h3>
+                        <p>permium homes with more perfect interior</p>
                         <button class="btn">view </button>
                     </div>
                 </div>
@@ -71,8 +97,8 @@
                 <div class="containcards">
                     <div class="para">
                         <img src="./home2.jpeg" alt="">
-                        <h3>just for fun</h3>
-                        <p>if ur an intro^%t</p>
+                        <h3>home 3</h3>
+                        <p>low budget homes with perfect compatability</p>
                         <button class="btn">view </button>
                     </div>
                 </div>
@@ -112,14 +138,22 @@
         </section>
 
         <div class="swiper">
-            
+
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide" style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;" >Slide 1</div>
-                <div class="swiper-slide" style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;" >Slide 2</div>
-                <div class="swiper-slide" style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;">Slide 3</div>
-                <div class="swiper-slide" style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;" >Slide 4</div>
+                <div class="swiper-slide"
+                    style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;">
+                    Slide 1</div>
+                <div class="swiper-slide"
+                    style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;">
+                    Slide 2</div>
+                <div class="swiper-slide"
+                    style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;">
+                    Slide 3</div>
+                <div class="swiper-slide"
+                    style="background-image: url(./stage3.jpg);background-repeat: no-repeat;background-position:center;background-size:cover;">
+                    Slide 4</div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -130,12 +164,12 @@
 
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
-        
+
         </div>
 
         <script src="./script.js" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
+        <script src="./hamberger.js"></script>
     </div>
 </body>
 
