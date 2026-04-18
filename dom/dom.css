@@ -11,7 +11,7 @@ body {
         max-width: 400px;
         margin: auto;
     }
-    /* input, textarea, button {
+    input, textarea, button {
         width: 100%;
         padding: 8px;
         margin: 6px 0;
@@ -39,4 +39,4 @@ body {
         padding: 0 10px 10px;
         color: #555;
         text-align: justify;
-    } */
+    }
