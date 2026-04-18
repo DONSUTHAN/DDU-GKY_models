@@ -66,6 +66,3 @@ if(!terms) {
 
 alert("Form submitted successfully");
 });
-
-// hello for you 
-// incase i don't good morning ,good afternoon,good evening and good night
