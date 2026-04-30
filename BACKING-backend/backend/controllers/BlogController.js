@@ -1,4 +1,5 @@
 const Blog = require('../models/BlogModel')
+//blog means post in postman
 
 const createpost = async (req,res) => {
     const  {title,description,author} = req.body
@@ -62,17 +63,17 @@ const deletepost = async (req,res)=> {
     }
 }
 
-const createBlog = async {req,res} => {
-    cosnt = {title,description} = req.body
+const createBlog = async (req,res) => {
+    const {title,description} = req.body
     //removing author
-    ty{
-        cosnt newdata = await newBlog ({
+    try{
+        const newdata = await newBlog ({
             title:description,
             author:req.user.name
         })
     }catch(error){
         res.status(500).json ({msg:"server error"})
-    })
+    }
 }
 
 module.exports = {createpost,getposts,updatepost,deletepost}

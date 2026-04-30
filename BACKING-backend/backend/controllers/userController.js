@@ -1,4 +1,5 @@
 const UserSchema = require ('../models/userModel')
+const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const saltround = 10
 const registeruser = async (req,res)=>{
@@ -24,10 +25,12 @@ const registeruser = async (req,res)=>{
     }
 }
 const login = async (req,res) => {
-    const {email,password} = req.body
+    const {email,password} = res.body
 
     try {
         const user = await user.findOne({email})
+        const token = jwt.sign ({id:user._id,name:user.name},process.env.SECRET_KEY)
+
         if(!user){
             return res.status (404).json ({msg:"user not registerd,please register"})
         }
@@ -46,6 +49,5 @@ const login = async (req,res) => {
 // res.status(200).json({msg:"logged in,token:token"}
 
 
-const token = Jwt.sign ({id:user_id,name:user.name},{process.env.SECRET_KEY,.....})
 
 module.exports = {registeruser,login}
