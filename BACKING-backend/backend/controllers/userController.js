@@ -40,4 +40,12 @@ const login = async (req,res) => {
     }
 }
 
+//json web
+// const jwt = require ('jsonwebtoken')
+// const token = jwt.sign({id:user_id},process.env.SECRET_KEY,{expiresIn:'it'})
+// res.status(200).json({msg:"logged in,token:token"}
+
+
+const token = Jwt.sign ({id:user_id,name:user.name},{process.env.SECRET_KEY,.....})
+
 module.exports = {registeruser,login}

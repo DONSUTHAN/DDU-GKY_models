@@ -62,6 +62,18 @@ const deletepost = async (req,res)=> {
     }
 }
 
+const createBlog = async {req,res} => {
+    cosnt = {title,description} = req.body
+    //removing author
+    ty{
+        cosnt newdata = await newBlog ({
+            title:description,
+            author:req.user.name
+        })
+    }catch(error){
+        res.status(500).json ({msg:"server error"})
+    })
+}
 
 module.exports = {createpost,getposts,updatepost,deletepost}
 
