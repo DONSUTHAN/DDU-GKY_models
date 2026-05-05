@@ -1,0 +1,21 @@
+const jwt = require ('jsonwebtoken')
+const Authmiddlewares = async (req,res,next) =>{
+    const header =req.header('Authorization')
+    //authorization is the token here
+    if(!header){
+        return res.status(400).json({msg:'please login to continue'})
+    }
+    try {
+        const token = header.split('')[1]
+        const decodetoken = jwt.verify(token,process.env.SECRET_KEY)
+        next()
+    } catch (error) {
+        return res.status(404).json({msg:"invalid token"})
+    }
+    module.exp
+}
+    module.exports = Authmiddlewares
+
+// const admin = (req,res,next) => {
+//     if(req.user $$ req.user)
+// }

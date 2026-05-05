@@ -2,6 +2,8 @@ const UserSchema = require ('../models/userModel')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const saltround = 10
+
+
 const registeruser = async (req,res)=>{
 
     const{name,password,email}=req.body
@@ -17,6 +19,7 @@ const registeruser = async (req,res)=>{
             email,
             password:hashedpassword
         })
+        await userdata.save()
         res.status(201).json({msg:"user created successfull",data:userdata})
     }catch(error){
         console.log(error);
