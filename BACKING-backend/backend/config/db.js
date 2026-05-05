@@ -12,6 +12,21 @@ const connectDB = async () => {
 
 module.exports = connectDB
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //run  {npm init}
 //then run ,{npm i expresse mongoose}
 //then there is module folder and a lock json and package json file will be there look the package.json
