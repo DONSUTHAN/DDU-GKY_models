@@ -16,7 +16,7 @@ const CreateBlog = async (req, res) => {
 const getposts = async (req, res) => {
     try {
         const posts = await Blog.find().sort({ createdAt: -1 })
-        Logger.info('jkbjbj')
+       
 
         res.status(200).json({ msg: "all posts", data: posts })
     } catch (error) {
