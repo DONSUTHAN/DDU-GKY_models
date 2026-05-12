@@ -1,1 +1,1 @@
-const mongoose = require('mongoose')
+const Blog = require ('../Model/BlogModel')
