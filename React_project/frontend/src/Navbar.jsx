@@ -1,47 +1,24 @@
-import React from 'react';
-import styled from 'styled-components'
+import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
-const Container = styled.div`
-    width: 100%;
-    height: fit-content;
-`
-const Logo = styled.h1`
-    color: #044d04;
-`
-const Ul = styled.ul`
-    list-style: none;
-`
-const B = styled.button`
-    
-`
-const Searchbox = styled.div`
-    
-`
-const Icon =styled.
-
-const Navbar = () => {
+function Navbar() {
   return (
-    <Container>
-        <Logo> Veggi Basket</Logo>
-        <Searchbox>
-        <input type="text" placeholder='Search'/>
-        
-        </Searchbox>
-                
-        <Ul>
-            <li>Home</li>
-            <li>About</li>
-        </Ul>
-        <B>
-            login
-        </B>
-        <B>
-            sign up
-        </B>
+    <nav className="navbar">
+      <h2 className="logo">Eszy Shop</h2>
 
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Signup</Link>
 
-    </Container>
-  )
+        <Link to="/cart">
+          <FaShoppingCart />
+        </Link>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
