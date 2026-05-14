@@ -122,16 +122,58 @@
 // export default App
 
 
-import React from 'react'
-import Navbar from './Navbar'
+import { Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-const App = () => {
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import FarmerDashboard from "./pages/FarmerDashboard";
+import AddProduct from "./pages/AddProduct";
+
+function App() {
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
-  )
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route
+          path="/products"
+          element={<Products />}
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+
+        <Route
+          path="/register"
+          element={<Register />}
+        />
+
+        <Route path="/cart" element={<Cart />} />
+
+        <Route
+          path="/dashboard"
+          element={<FarmerDashboard />}
+        />
+
+        <Route
+          path="/add-product"
+          element={<AddProduct />}
+        />
+      </Routes>
+
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
