@@ -17,3 +17,13 @@
 }
 
 export default Cart;*/
+
+function Cart() {
+  return (
+    <div style={{ padding: "30px" }}>
+      <h2>Cart Page</h2>
+    </div>
+  );
+}
+
+export default Cart;
