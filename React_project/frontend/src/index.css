@@ -1,4 +1,4 @@
-/* :root {
+/*:root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +108,9 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+<<<<<<< HEAD
 } */
+=======
+}
+*/
+>>>>>>> 9dde9a5b1480024b0ac1fd5516f732ee6acb954c
