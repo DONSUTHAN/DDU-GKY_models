@@ -11,7 +11,7 @@ const Register = () => {
     // <input type="text"placeholder='Confirm your password' />
     // {/* <input type="text"placeholder='Enter your email' /> */}
     // <Btn>Register</Btn>
-    // <P>Already have an account?Login</P>
+    // 
     // </Container>
     <div className="container">
       <h1>Create Account</h1>
@@ -21,6 +21,7 @@ const Register = () => {
         <input type="text"placeholder='Enter your email' />
         <input type="text"placeholder='Enter your password' />
         <input type="text"placeholder='Confirm your password' />
+        <p>Already have an account?Login</p>
         <button></button>
       </div>
     </div>
