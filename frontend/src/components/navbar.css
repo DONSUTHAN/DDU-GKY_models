@@ -1,0 +1,16 @@
+.navContainer{
+    background-color: #ee82ee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 34px;
+}
+button{
+    padding: 13px;
+    border-radius: 13px;
+    background-color: green;
+}

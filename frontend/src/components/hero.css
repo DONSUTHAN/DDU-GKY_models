@@ -1,0 +1,25 @@
+.HeroContainer{
+    background-image: url('./assets/background-image.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    height: 500px;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: green;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.textss{
+    display: flex;
+    justify-content: center;
+}

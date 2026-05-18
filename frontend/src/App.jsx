@@ -1,18 +1,21 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Login from './pages/Login'
-// import Register from './pages/Register'
+import {Routes , Route} from 'react-router-dom'
+import Products from './pages/Products'
 
+ 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar/>
       <Hero/>
-      <Login/>
-      {/* <Register/> */}
-    </div>
+      <Products/>
+    </>
   )
 }
+
+
+
 
 export default App

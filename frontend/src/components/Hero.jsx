@@ -1,30 +1,24 @@
 import React from 'react'
-import styled from 'styled-components'
+import "./hero.css"
 
-const Container =styled.div`
-    
-`
-const H = styled.h1`
-    
-`
-const P = styled.p`
-    
-`
-const Btn =styled.button`
-    
-`
+
 
 const Hero = () => {
   return (
-    <Container>
-        <H>Fresh Produce <br />
-        Directly from Farmer
-        </H>
-        <P>Buy fresh fruits and Vegitable directly from local farmers. <br />
-        Quality produces ,fair prices,healthy,life.
-        </P>
-        <Btn>Shop Now</Btn>
-    </Container>
+
+    <div className="HeroContainer">
+      <div className="textss">
+        <div className="centering">
+          <h1>Fresh Produces <br /> Directly from farmer</h1>
+        <p>Buy fresh fruits and vegitables directly from local farmers, <br />Quality produes produces, fair prices, healthy ,life.</p>
+        <div className="btn">
+          <button>Shop Now</button>
+          </div>
+        </div>
+         
+      </div>
+     
+    </div>
   )
 }
 

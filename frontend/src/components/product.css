@@ -1,0 +1,9 @@
+.productContainer{
+    margin: 19px;
+    padding-top: 12px;
+}
+.productCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
