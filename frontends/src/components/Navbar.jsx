@@ -1,33 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
-
 
 const Container =styled.div`
     background-color: violet;
     display: flex;
     justify-content: space-around;
-
-
     align-items: center;
-
 `
 const H =styled.h1`
     
 `
-
-const Ul = styled.ul`
-    display: flex;
-    gap: 39px;
-    list-style: none;
-    margin: 0%;
-    padding:0%;
-`
-
-
-
-
 const NavLink = styled.div`
     display: flex;
     align-items: center;
@@ -41,11 +24,11 @@ const Button = styled.div`
     display: flex;
     gap: 4px;
 `
-// const Ul = styled.ul`
-//     display: flex;
-//     gap: 15px;
+const Ul = styled.ul`
+    display: flex;
+    gap: 15px;
 
-// `
+`
 const Li = styled.li`
     list-style: none;
 `
@@ -53,18 +36,6 @@ const Navbar = () => {
   return (
     <Container>
         <H>vegi bascket</H>
-
-        <Ul>
-        <Li>Home</Li>
-        <Li>Product</Li>
-        <Li>About Us</Li>
-        <Li>Login</Li>
-        <Li>Register</Li>
-        </Ul>
-        <Button>
-        <Btn>login</Btn>
-        <Btn>login</Btn>
-        </Button>
 
        {/* <NavLink> 
 
