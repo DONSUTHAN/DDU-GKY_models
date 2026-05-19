@@ -1,0 +1,75 @@
+.footer {
+  /* This line styles the footer container. */
+  background: #173725;
+  /* This line gives the footer a dark green background. */
+  color: white;
+  /* This line makes footer text white. */
+  display: grid;
+  /* This line uses a grid layout for footer columns. */
+  gap: 24px;
+  /* This line adds space between footer columns. */
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.6fr);
+  /* This line controls footer column widths. */
+  padding: 34px clamp(18px, 4vw, 56px);
+  /* This line adds responsive footer spacing. */
+}
+
+.footer-brand {
+  /* This line styles the footer brand section. */
+  display: grid;
+  /* This line stacks footer brand content. */
+  gap: 10px;
+  /* This line adds space between brand items. */
+  max-width: 560px;
+  /* This line limits brand text width. */
+}
+
+.footer-brand strong {
+  /* This line styles the footer app name. */
+  font-size: 1.4rem;
+  /* This line makes the app name larger. */
+}
+
+.footer-brand p,
+.footer-contact p {
+  /* This line styles footer paragraphs. */
+  color: #d6e2db;
+  /* This line gives footer text a softer white color. */
+  line-height: 1.65;
+  /* This line improves readability. */
+  margin: 0;
+  /* This line removes default paragraph margin. */
+}
+
+.footer-contact {
+  /* This line styles the footer contact section. */
+  display: grid;
+  /* This line stacks contact rows. */
+  gap: 10px;
+  /* This line adds space between contact rows. */
+}
+
+.footer-contact h3 {
+  /* This line styles the footer contact heading. */
+  margin: 0 0 6px;
+  /* This line controls heading spacing. */
+}
+
+.footer-contact p {
+  /* This line styles each contact row. */
+  align-items: center;
+  /* This line vertically centers icon and text. */
+  display: flex;
+  /* This line places icon and text in a row. */
+  gap: 10px;
+  /* This line adds space between icon and text. */
+}
+
+@media (max-width: 760px) {
+  /* This line starts responsive footer styles. */
+  .footer {
+    /* This line changes footer layout on small screens. */
+    grid-template-columns: 1fr;
+    /* This line stacks footer columns. */
+  }
+}

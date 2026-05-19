@@ -1,0 +1,105 @@
+.products-section {
+  /* This line styles the products section. */
+  background: #f6f3ea;
+  /* This line keeps the products section light. */
+}
+
+.products-grid {
+  /* This line styles the product grid. */
+  display: grid;
+  /* This line uses CSS grid for product cards. */
+  gap: 18px;
+  /* This line adds space between product cards. */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* This line makes product cards responsive. */
+  margin-top: 22px;
+  /* This line adds space above the product grid. */
+}
+
+.empty-box {
+  /* This line styles empty product messages. */
+  background: white;
+  /* This line gives the empty box a white background. */
+  border: 1px dashed #c6bca8;
+  /* This line adds a dashed border. */
+  border-radius: 8px;
+  /* This line rounds the empty box corners. */
+  color: #64746d;
+  /* This line makes empty text softer. */
+  padding: 18px;
+  /* This line adds inner spacing. */
+}
+
+.about-section {
+  /* This line styles the about section. */
+  align-items: start;
+  /* This line aligns about content to the top. */
+  background: #e7efe7;
+  /* This line gives the about section a light green background. */
+  display: grid;
+  /* This line creates an about grid layout. */
+  gap: 24px;
+  /* This line adds space between about columns. */
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  /* This line controls about column widths. */
+}
+
+.contact-section {
+  /* This line styles the contact section. */
+  background: #fff;
+  /* This line gives the contact section a white background. */
+}
+
+.contact-grid {
+  /* This line styles contact boxes. */
+  display: grid;
+  /* This line places contact boxes in a grid. */
+  gap: 16px;
+  /* This line adds space between contact boxes. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* This line creates three contact columns. */
+  margin-top: 20px;
+  /* This line adds space above the contact grid. */
+}
+
+.contact-grid div {
+  /* This line styles each contact box. */
+  background: #f6f3ea;
+  /* This line gives contact boxes a warm background. */
+  border: 1px solid #d8d0bd;
+  /* This line adds a border to contact boxes. */
+  border-radius: 8px;
+  /* This line rounds contact box corners. */
+  display: grid;
+  /* This line stacks contact label and value. */
+  gap: 8px;
+  /* This line adds space between label and value. */
+  padding: 18px;
+  /* This line adds inner spacing. */
+}
+
+.contact-grid span {
+  /* This line styles contact labels. */
+  color: #64746d;
+  /* This line makes labels softer. */
+  font-weight: 800;
+  /* This line makes labels bold. */
+}
+
+.contact-grid strong {
+  /* This line styles contact values. */
+  color: #173725;
+  /* This line gives contact values dark green color. */
+  overflow-wrap: anywhere;
+  /* This line prevents long email text from overflowing. */
+}
+
+@media (max-width: 820px) {
+  /* This line starts responsive home styles. */
+  .about-section,
+  .contact-grid {
+    /* This line changes grids on small screens. */
+    grid-template-columns: 1fr;
+    /* This line stacks columns vertically. */
+  }
+}

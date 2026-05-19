@@ -1,0 +1,88 @@
+.auth-page {
+  /* This line styles login and register pages. */
+  align-items: center;
+  /* This line vertically centers the auth card. */
+  background: #e7efe7;
+  /* This line gives auth pages a light green background. */
+  display: flex;
+  /* This line lets the card center easily. */
+  justify-content: center;
+  /* This line horizontally centers the auth card. */
+  min-height: calc(100vh - 72px);
+  /* This line fills the screen under the navbar. */
+  padding: 30px 18px;
+  /* This line adds spacing around the card. */
+}
+
+.auth-card {
+  /* This line styles the login/register card. */
+  background: white;
+  /* This line gives the card a white background. */
+  border: 1px solid #d8d0bd;
+  /* This line adds a card border. */
+  border-radius: 8px;
+  /* This line rounds card corners. */
+  box-shadow: 0 18px 38px rgba(37, 31, 21, 0.12);
+  /* This line adds a soft shadow. */
+  display: grid;
+  /* This line stacks form controls. */
+  gap: 14px;
+  /* This line adds space between form controls. */
+  max-width: 460px;
+  /* This line limits the form width. */
+  padding: 24px;
+  /* This line adds inner spacing. */
+  width: 100%;
+  /* This line lets the form shrink on small screens. */
+}
+
+.auth-card h1 {
+  /* This line styles the auth page heading. */
+  color: #173725;
+  /* This line makes the heading dark green. */
+  margin: 0 0 8px;
+  /* This line controls heading spacing. */
+}
+
+.auth-card label {
+  /* This line styles form labels. */
+  color: #30453b;
+  /* This line sets label text color. */
+  display: grid;
+  /* This line stacks label text and input. */
+  font-weight: 800;
+  /* This line makes labels bold. */
+  gap: 7px;
+  /* This line adds space between label and input. */
+}
+
+.auth-card input,
+.auth-card select {
+  /* This line styles auth inputs and selects. */
+  border: 1px solid #c9c0ad;
+  /* This line adds input borders. */
+  border-radius: 8px;
+  /* This line rounds input corners. */
+  min-height: 44px;
+  /* This line makes inputs easy to use. */
+  padding: 10px 12px;
+  /* This line adds inner input spacing. */
+}
+
+.auth-submit {
+  /* This line styles the auth submit button. */
+  width: 100%;
+  /* This line makes the submit button full width. */
+}
+
+.auth-link {
+  /* This line styles the link-style auth button. */
+  background: transparent;
+  /* This line removes button background. */
+  border: 0;
+  /* This line removes button border. */
+  color: #1f7a4d;
+  /* This line makes link text green. */
+  font-weight: 900;
+  /* This line makes link text bold. */
+}

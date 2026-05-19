@@ -1,0 +1,182 @@
+.navbar {
+  /* This line styles the whole navbar. */
+  align-items: center;
+  /* This line vertically centers navbar items. */
+  background: rgba(246, 243, 234, 0.96);
+  /* This line gives the navbar a light background. */
+  border-bottom: 1px solid #d8d0bd;
+  /* This line adds a bottom border. */
+  display: flex;
+  /* This line places navbar children in a row. */
+  gap: 18px;
+  /* This line adds space between navbar groups. */
+  justify-content: space-between;
+  /* This line separates logo, links, and actions. */
+  padding: 14px clamp(18px, 4vw, 54px);
+  /* This line adds responsive navbar padding. */
+  position: sticky;
+  /* This line keeps the navbar visible while scrolling. */
+  top: 0;
+  /* This line sticks the navbar to the top. */
+  z-index: 10;
+  /* This line keeps navbar above page content. */
+}
+
+.navbar-logo,
+.navbar-links,
+.navbar-actions,
+.user-menu {
+  /* This line styles repeated navbar flex groups. */
+  align-items: center;
+  /* This line vertically centers children. */
+  display: flex;
+  /* This line places children in a row. */
+  gap: 10px;
+  /* This line adds spacing between children. */
+}
+
+.navbar-logo {
+  /* This line styles the logo button. */
+  background: transparent;
+  /* This line removes button background. */
+  border: 0;
+  /* This line removes button border. */
+  color: #173725;
+  /* This line gives the logo dark green text. */
+  font-size: 1.05rem;
+  /* This line sets the logo text size. */
+  font-weight: 900;
+  /* This line makes the logo text bold. */
+}
+
+.logo-mark {
+  /* This line styles the logo icon circle. */
+  align-items: center;
+  /* This line vertically centers the icon. */
+  background: #1f7a4d;
+  /* This line gives the logo mark a green background. */
+  border-radius: 50%;
+  /* This line makes the logo mark circular. */
+  color: white;
+  /* This line makes the icon white. */
+  display: inline-flex;
+  /* This line centers the icon inside the circle. */
+  height: 42px;
+  /* This line sets the logo mark height. */
+  justify-content: center;
+  /* This line horizontally centers the icon. */
+  width: 42px;
+  /* This line sets the logo mark width. */
+}
+
+.navbar-links button,
+.login-button,
+.menu-button,
+.dropdown button {
+  /* This line styles navbar buttons. */
+  background: transparent;
+  /* This line removes default button background. */
+  border: 0;
+  /* This line removes default button border. */
+  color: #30453b;
+  /* This line sets navbar button text color. */
+  font-weight: 800;
+  /* This line makes navbar button text bold. */
+}
+
+.login-button {
+  /* This line styles the login button. */
+  background: #1f7a4d;
+  /* This line gives the login button a green background. */
+  border-radius: 8px;
+  /* This line rounds the login button corners. */
+  color: white;
+  /* This line makes login text white. */
+  min-height: 40px;
+  /* This line makes the login button comfortable to click. */
+  padding: 0 16px;
+  /* This line adds horizontal spacing inside the login button. */
+}
+
+.user-menu {
+  /* This line styles the logged-in user menu. */
+  position: relative;
+  /* This line lets the dropdown position under this area. */
+}
+
+.user-name {
+  /* This line styles the logged-in name. */
+  color: #173725;
+  /* This line gives the name a dark green color. */
+  font-weight: 900;
+  /* This line makes the name bold. */
+}
+
+.menu-button {
+  /* This line styles the three-line menu button. */
+  background: #e7efe7;
+  /* This line gives the menu button a light green background. */
+  border-radius: 8px;
+  /* This line rounds menu button corners. */
+  min-height: 40px;
+  /* This line makes the menu button easy to click. */
+  min-width: 42px;
+  /* This line gives the menu button a stable width. */
+}
+
+.dropdown {
+  /* This line styles the dropdown menu. */
+  background: white;
+  /* This line gives the dropdown a white background. */
+  border: 1px solid #d8d0bd;
+  /* This line adds a border around the dropdown. */
+  border-radius: 8px;
+  /* This line rounds the dropdown corners. */
+  box-shadow: 0 18px 38px rgba(37, 31, 21, 0.16);
+  /* This line adds a soft dropdown shadow. */
+  display: grid;
+  /* This line stacks dropdown buttons. */
+  min-width: 170px;
+  /* This line gives the dropdown a readable width. */
+  padding: 8px;
+  /* This line adds inside spacing to the dropdown. */
+  position: absolute;
+  /* This line positions the dropdown under the menu. */
+  right: 0;
+  /* This line aligns the dropdown to the right side. */
+  top: 48px;
+  /* This line places the dropdown below the navbar button. */
+}
+
+.dropdown button {
+  /* This line styles buttons inside the dropdown. */
+  border-radius: 6px;
+  /* This line rounds dropdown button corners. */
+  padding: 10px;
+  /* This line adds inside spacing to dropdown buttons. */
+  text-align: left;
+  /* This line aligns dropdown text to the left. */
+}
+
+.dropdown button:hover {
+  /* This line styles dropdown buttons on hover. */
+  background: #eff4ed;
+  /* This line gives hover feedback. */
+}
+
+@media (max-width: 760px) {
+  /* This line starts responsive navbar styles for small screens. */
+  .navbar {
+    /* This line changes navbar layout on small screens. */
+    align-items: flex-start;
+    /* This line aligns items to the top. */
+    flex-direction: column;
+    /* This line stacks navbar groups vertically. */
+  }
+
+  .navbar-links {
+    /* This line styles links on small screens. */
+    flex-wrap: wrap;
+    /* This line allows links to wrap instead of overflow. */
+  }
+}

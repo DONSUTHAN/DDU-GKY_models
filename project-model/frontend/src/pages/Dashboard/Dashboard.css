@@ -1,0 +1,126 @@
+.dashboard-page {
+  /* This line styles the dashboard page. */
+  background: #f6f3ea;
+  /* This line sets the dashboard background color. */
+}
+
+.dashboard-grid {
+  /* This line styles the consumer dashboard grid. */
+  display: grid;
+  /* This line places dashboard cards in a grid. */
+  gap: 18px;
+  /* This line adds space between cards. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* This line creates two responsive columns. */
+}
+
+.dashboard-card {
+  /* This line styles dashboard cards. */
+  background: white;
+  /* This line gives cards a white background. */
+  border: 1px solid #d8d0bd;
+  /* This line adds a border to dashboard cards. */
+  border-radius: 8px;
+  /* This line rounds dashboard card corners. */
+  box-shadow: 0 16px 34px rgba(37, 31, 21, 0.08);
+  /* This line adds a soft shadow to dashboard cards. */
+  margin-top: 18px;
+  /* This line adds space above dashboard cards. */
+  padding: 18px;
+  /* This line adds inner spacing to dashboard cards. */
+}
+
+.dashboard-card h2 {
+  /* This line styles dashboard card headings. */
+  align-items: center;
+  /* This line vertically centers heading icon and text. */
+  color: #173725;
+  /* This line gives headings a dark green color. */
+  display: flex;
+  /* This line places heading icon and text in a row. */
+  gap: 10px;
+  /* This line adds space between icon and text. */
+  margin: 0 0 14px;
+  /* This line controls heading spacing. */
+}
+
+.dashboard-form {
+  /* This line styles dashboard forms. */
+  display: grid;
+  /* This line stacks form fields. */
+  gap: 12px;
+  /* This line adds space between form fields. */
+}
+
+.form-grid {
+  /* This line styles the farmer form grid. */
+  display: grid;
+  /* This line places inputs in a grid. */
+  gap: 12px;
+  /* This line adds space between inputs. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* This line creates two form columns. */
+}
+
+.dashboard-form input,
+.dashboard-form select,
+.dashboard-form textarea {
+  /* This line styles dashboard form controls. */
+  border: 1px solid #c9c0ad;
+  /* This line adds form control borders. */
+  border-radius: 8px;
+  /* This line rounds form control corners. */
+  min-height: 44px;
+  /* This line makes form controls easy to use. */
+  padding: 10px 12px;
+  /* This line adds inner spacing to controls. */
+}
+
+.dashboard-form textarea {
+  /* This line styles dashboard textareas. */
+  min-height: 96px;
+  /* This line gives textareas more height. */
+  resize: vertical;
+  /* This line allows vertical textarea resizing. */
+}
+
+.orders-card {
+  /* This line styles the orders card. */
+  display: grid;
+  /* This line stacks order content. */
+  gap: 8px;
+  /* This line adds space between order rows. */
+}
+
+.order-row {
+  /* This line styles each order row. */
+  align-items: center;
+  /* This line vertically centers order row text. */
+  border-top: 1px solid #e1dacb;
+  /* This line adds a divider above each order row. */
+  display: grid;
+  /* This line uses grid for order columns. */
+  gap: 12px;
+  /* This line adds space between order columns. */
+  grid-template-columns: 1fr auto auto;
+  /* This line sizes product, total, and status columns. */
+  padding: 12px 0;
+  /* This line adds vertical spacing to order rows. */
+}
+
+.order-row span {
+  /* This line styles order row text. */
+  font-weight: 800;
+  /* This line makes order row text bold. */
+}
+
+@media (max-width: 820px) {
+  /* This line starts responsive dashboard styles. */
+  .dashboard-grid,
+  .form-grid,
+  .order-row {
+    /* This line changes grids on small screens. */
+    grid-template-columns: 1fr;
+    /* This line stacks columns vertically. */
+  }
+}
