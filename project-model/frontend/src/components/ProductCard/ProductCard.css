@@ -1,0 +1,101 @@
+.product-card {
+  /* This line styles each product card. */
+  background: white;
+  /* This line gives product cards a white background. */
+  border: 1px solid #d8d0bd;
+  /* This line adds a card border. */
+  border-radius: 8px;
+  /* This line rounds card corners. */
+  box-shadow: 0 16px 34px rgba(37, 31, 21, 0.08);
+  /* This line adds a soft shadow. */
+  display: flex;
+  /* This line lets the card content stack vertically. */
+  flex-direction: column;
+  /* This line stacks image and body vertically. */
+  overflow: hidden;
+  /* This line clips the image to the rounded card. */
+}
+
+.product-card img {
+  /* This line styles product images. */
+  aspect-ratio: 4 / 3;
+  /* This line keeps product images the same shape. */
+  display: block;
+  /* This line removes image inline spacing. */
+  object-fit: cover;
+  /* This line crops images nicely. */
+  width: 100%;
+  /* This line makes images fill the card width. */
+}
+
+.product-card-body {
+  /* This line styles the product card body. */
+  display: grid;
+  /* This line stacks card content. */
+  flex: 1;
+  /* This line lets the body fill remaining card height. */
+  gap: 12px;
+  /* This line adds space between card content. */
+  padding: 16px;
+  /* This line adds inner card spacing. */
+}
+
+.product-category {
+  /* This line styles the product category pill. */
+  background: #e7efe7;
+  /* This line gives the category a light green background. */
+  border-radius: 999px;
+  /* This line makes the category pill fully rounded. */
+  color: #1f5138;
+  /* This line makes category text green. */
+  font-size: 0.78rem;
+  /* This line makes category text small. */
+  font-weight: 900;
+  /* This line makes category text bold. */
+  justify-self: start;
+  /* This line keeps the pill only as wide as needed. */
+  padding: 6px 10px;
+  /* This line adds inner spacing to the pill. */
+}
+
+.product-card h3 {
+  /* This line styles the product name. */
+  color: #173725;
+  /* This line gives product names a dark green color. */
+  margin: 0;
+  /* This line removes default heading margin. */
+}
+
+.product-card p {
+  /* This line styles product descriptions. */
+  color: #64746d;
+  /* This line gives descriptions a softer color. */
+  line-height: 1.6;
+  /* This line improves description readability. */
+  margin: 0;
+  /* This line removes default paragraph margin. */
+}
+
+.product-meta {
+  /* This line styles the product meta section. */
+  display: grid;
+  /* This line stacks price, stock, and location. */
+  gap: 8px;
+  /* This line adds space between meta rows. */
+}
+
+.product-meta span {
+  /* This line styles each product meta row. */
+  color: #31483d;
+  /* This line gives meta text a readable color. */
+  font-weight: 800;
+  /* This line makes meta text bold. */
+}
+
+.card-order-button {
+  /* This line styles the product card order button. */
+  margin-top: auto;
+  /* This line pushes the order button to the bottom of the card. */
+  width: 100%;
+  /* This line makes the order button full width. */
+}

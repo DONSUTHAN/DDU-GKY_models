@@ -1,0 +1,136 @@
+:root {
+  /* This line defines global color and font variables for the app. */
+  color: #17241e;
+  /* This line sets the default text color. */
+  background: #f6f3ea;
+  /* This line sets the default page background color. */
+  font-family: Inter, Arial, sans-serif;
+  /* This line sets the default font family. */
+}
+
+* {
+  /* This line applies box sizing to all elements. */
+  box-sizing: border-box;
+  /* This line makes width calculations easier. */
+}
+
+body {
+  /* This line styles the body element. */
+  margin: 0;
+  /* This line removes the browser default body margin. */
+}
+
+button,
+input,
+select,
+textarea {
+  /* This line styles all form controls with the same font. */
+  font: inherit;
+  /* This line makes form controls use the app font. */
+}
+
+button {
+  /* This line styles all buttons. */
+  cursor: pointer;
+  /* This line changes the mouse pointer on buttons. */
+}
+
+.app {
+  /* This line styles the main app wrapper. */
+  min-height: 100vh;
+  /* This line makes the app fill the full screen height. */
+}
+
+.app-message {
+  /* This line styles success and error messages. */
+  background: #fff0cf;
+  /* This line gives the message a warm background. */
+  border: 1px solid #e4b85d;
+  /* This line gives the message a visible border. */
+  border-radius: 8px;
+  /* This line rounds the message corners slightly. */
+  margin: 18px auto 0;
+  /* This line centers the message and adds space above it. */
+  max-width: 1120px;
+  /* This line limits the message width on large screens. */
+  padding: 14px 18px;
+  /* This line adds inner spacing to the message. */
+  width: calc(100% - 32px);
+  /* This line keeps the message away from screen edges. */
+}
+
+.primary-button {
+  /* This line styles important buttons. */
+  align-items: center;
+  /* This line vertically centers button content. */
+  background: #1f7a4d;
+  /* This line gives buttons a green background. */
+  border: 0;
+  /* This line removes the default button border. */
+  border-radius: 8px;
+  /* This line rounds button corners. */
+  color: white;
+  /* This line makes button text white. */
+  display: inline-flex;
+  /* This line lets icons and text align nicely. */
+  font-weight: 800;
+  /* This line makes button text bold. */
+  gap: 8px;
+  /* This line adds space between icon and text. */
+  justify-content: center;
+  /* This line centers button content horizontally. */
+  min-height: 44px;
+  /* This line makes buttons easy to click. */
+  padding: 0 16px;
+  /* This line adds horizontal button spacing. */
+}
+
+.secondary-button {
+  /* This line styles secondary buttons. */
+  background: #e7efe7;
+  /* This line gives secondary buttons a light green background. */
+  color: #1f5138;
+  /* This line makes secondary button text green. */
+}
+
+.page-shell {
+  /* This line gives pages consistent spacing. */
+  padding: 34px clamp(18px, 4vw, 56px);
+  /* This line makes page spacing responsive. */
+}
+
+.section-title {
+  /* This line styles section titles. */
+  color: #163324;
+  /* This line sets title color. */
+  font-size: clamp(1.7rem, 4vw, 3rem);
+  /* This line makes titles responsive. */
+  line-height: 1.05;
+  /* This line tightens title line height. */
+  margin: 0 0 10px;
+  /* This line controls spacing below titles. */
+}
+
+.section-label {
+  /* This line styles small section labels. */
+  color: #b44f2d;
+  /* This line gives labels a warm color. */
+  font-size: 0.78rem;
+  /* This line makes labels small. */
+  font-weight: 900;
+  /* This line makes labels bold. */
+  letter-spacing: 0;
+  /* This line avoids negative letter spacing. */
+  margin: 0 0 8px;
+  /* This line controls label spacing. */
+  text-transform: uppercase;
+  /* This line makes labels uppercase. */
+}
+
+.muted-text {
+  /* This line styles helper text. */
+  color: #64746d;
+  /* This line makes helper text softer. */
+  line-height: 1.7;
+  /* This line improves readability. */
+}
