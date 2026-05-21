@@ -35,15 +35,12 @@ const createOrder = async (req, res) => {
       farmer: product.farmer,
       // This line connects the order to the farmer who owns the product.
       quantity,
-      // This line saves the ordered quantity.
       totalPrice,
-      // This line saves the calculated total price.
       address,
-      // This line saves the delivery address.
       phone,
-      // This line saves the delivery phone number.
       paymentMethod
-      // This line saves the selected payment method.
+      // these lines save those things.
+
     });
     // This line ends the order creation object.
     product.quantity = product.quantity - Number(quantity);

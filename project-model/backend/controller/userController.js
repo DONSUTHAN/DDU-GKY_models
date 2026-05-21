@@ -50,6 +50,7 @@ const registerUser = async (req, res) => {
         // This line sends the user email.
         phone: user.phone,
         // This line sends the user phone number.
+        password:user.password,
         role: user.role
         // This line sends the user role.
       }

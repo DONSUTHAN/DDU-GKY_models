@@ -52,3 +52,12 @@ The API runs on `http://localhost:3000` and the React app runs on `http://localh
 
 - Home contact section: `frontend/src/pages/Home/Home.jsx`
 - Footer contact details: `frontend/src/components/Footer/Footer.jsx`
+
+
+
+dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.468.0"
