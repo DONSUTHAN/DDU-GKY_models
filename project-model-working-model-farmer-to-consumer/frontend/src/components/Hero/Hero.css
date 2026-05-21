@@ -1,0 +1,193 @@
+.hero-section {
+  display: grid;
+  /* This line uses a two-column grid. */
+  gap: 30px;
+  /* This line adds space between hero columns. */
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+  /* This line sizes the text and image columns. */
+  min-height: 560px;
+  /* This line gives the hero a strong first-screen height. */
+  padding: 56px clamp(18px, 4vw, 56px) 34px;
+  /* This line adds responsive hero spacing. */
+}
+
+.hero-content {
+  /* This line styles the hero text column. */
+  align-self: center;
+  /* This line vertically centers the hero text. */
+  animation: slideUp 700ms ease both;
+  /* This line animates the hero text upward when the page loads. */
+}
+
+.hero-content h1 {
+  /* This line styles the hero heading. */
+  color: #10251d;
+  /* This line sets the heading color. */
+  font-size: clamp(2.7rem, 7vw, 6.4rem);
+  /* This line makes the heading responsive. */
+  line-height: 0.98;
+  /* This line creates tight hero heading lines. */
+  margin: 0 0 18px;
+  /* This line controls heading spacing. */
+  max-width: 980px;
+  /* This line limits the heading width. */
+}
+
+.hero-text {
+  /* This line styles the hero paragraph. */
+  color: #5d6d66;
+  /* This line sets the paragraph color. */
+  font-size: 1.08rem;
+  /* This line sets paragraph size. */
+  line-height: 1.75;
+  /* This line improves paragraph readability. */
+  max-width: 720px;
+  /* This line limits paragraph width. */
+}
+
+.hero-search {
+  /* This line styles the hero search form. */
+  align-items: center;
+  /* This line vertically centers search form items. */
+  background: white;
+  /* This line gives the search form a white background. */
+  border: 1px solid #d8d0bd;
+  /* This line adds a border around the search form. */
+  border-radius: 8px;
+  /* This line rounds the search form corners. */
+  display: grid;
+  /* This line uses grid for search input layout. */
+  gap: 10px;
+  /* This line adds space between search items. */
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  /* This line sets icon, input, and button columns. */
+  margin: 26px 0 14px;
+  /* This line adds space around the search form. */
+  max-width: 720px;
+  /* This line limits search form width. */
+  padding: 10px;
+  /* This line adds inner spacing. */
+}
+
+.hero-search input {
+  /* This line styles the hero search input. */
+  border: 0;
+  /* This line removes the input border. */
+  min-height: 44px;
+  /* This line makes the input easy to use. */
+  outline: 0;
+  /* This line removes browser outline. */
+}
+
+.hero-dashboard-button {
+  /* This line styles the dashboard shortcut button. */
+  margin-top: 10px;
+  /* This line adds space above the button. */
+}
+
+.hero-photo {
+  /* This line styles the hero photo area. */
+  align-self: stretch;
+  /* This line makes the photo fill the hero height. */
+  animation: fadeIn 900ms ease both;
+  /* This line fades in the hero image. */
+  background-image: url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1100&q=80");
+  /* This line sets the vegetable hero photo. */
+  background-position: center;
+  /* This line centers the photo. */
+  background-size: cover;
+  /* This line makes the photo cover the full area. */
+  border-radius: 8px;
+  /* This line rounds the hero photo corners. */
+  display: flex;
+  /* This line lets the photo card align inside. */
+  min-height: 420px;
+  /* This line gives the photo a stable height. */
+  overflow: hidden;
+  /* This line clips content to rounded corners. */
+}
+
+.hero-photo-card {
+  /* This line styles the dark text box on the hero photo. */
+  align-self: end;
+  /* This line places the text box at the bottom. */
+  background: rgba(16, 37, 29, 0.82);
+  /* This line gives the text box a dark transparent background. */
+  color: white;
+  /* This line makes text white. */
+  display: grid;
+  /* This line stacks the label and title. */
+  gap: 6px;
+  /* This line adds space between text lines. */
+  padding: 20px;
+  /* This line adds inner spacing. */
+  width: 100%;
+  /* This line makes the text box fill the photo width. */
+}
+
+.hero-photo-card span {
+  /* This line styles the photo label. */
+  color: #ffd28a;
+  /* This line gives the label a warm color. */
+  font-weight: 900;
+  /* This line makes the label bold. */
+}
+
+.hero-photo-card strong {
+  /* This line styles the photo headline. */
+  font-size: 1.45rem;
+  /* This line sets the photo headline size. */
+}
+
+@keyframes slideUp {
+  /* This line creates the slideUp animation. */
+  from {
+    /* This line starts the animation state. */
+    opacity: 0;
+    /* This line starts invisible. */
+    transform: translateY(18px);
+    /* This line starts slightly lower. */
+  }
+  to {
+    /* This line ends the animation state. */
+    opacity: 1;
+    /* This line ends visible. */
+    transform: translateY(0);
+    /* This line ends in the normal position. */
+  }
+}
+
+@keyframes fadeIn {
+  /* This line creates the fadeIn animation. */
+  from {
+    /* This line starts the animation state. */
+    opacity: 0;
+    /* This line starts invisible. */
+  }
+  to {
+    /* This line ends the animation state. */
+    opacity: 1;
+    /* This line ends visible. */
+  }
+}
+
+@media (max-width: 860px) {
+  /* This line starts responsive hero styles. */
+  .hero-section {
+    /* This line changes the hero layout on small screens. */
+    grid-template-columns: 1fr;
+    /* This line stacks hero columns vertically. */
+  }
+
+  .hero-search {
+    /* This line changes the search layout on small screens. */
+    grid-template-columns: auto minmax(0, 1fr);
+    /* This line places button below the input if needed. */
+  }
+
+  .hero-search button {
+    /* This line styles the search button on small screens. */
+    grid-column: 1 / -1;
+    /* This line makes the button full width. */
+  }
+}
