@@ -3,7 +3,7 @@ const express = require ('express')
  const connectDB = require ('./config/db')
  connectDB()
  const BlogRoutes  = require('./routes/BlogRoutes')
- const userRoutes = require('./routes/userRoutes')
+//  const userRoutes = require('./routes/userRoutes')    
 
  app.use(express.json())
  app.use('/blog',BlogRoutes)

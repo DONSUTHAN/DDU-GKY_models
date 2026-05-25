@@ -1,26 +1,13 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer.jsx";
-// This line imports the Footer component.
 
 import Hero from "../../components/Hero/Hero.jsx";
-// This line imports the Hero component.
 
 import ProductCard from "../../components/ProductCard/ProductCard.jsx";
-// This line imports the ProductCard component.
 
 import "./Home.css";
-// This line imports home page styles from an external CSS file.
 
-const contactInfo = {
-  // This line creates one place to update contact section details.
-  phone: "+254 700 000 000",
-  // This line stores the phone number shown in the contact section.
-  email: "support@thefarmvegi.com",
-  // This line stores the email shown in the contact section.
-  location: "Nairobi Fresh Market, Kenya"
-  // This line stores the location shown in the contact section.
-};
-// This line ends the contactInfo object.
+
 
 function Home({ auth, products, loading, loadProducts, setPage }) {
   // This line creates the Home page component.

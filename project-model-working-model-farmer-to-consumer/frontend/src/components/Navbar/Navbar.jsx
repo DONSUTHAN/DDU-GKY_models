@@ -51,8 +51,8 @@ function Navbar({ auth, page, setPage, logoutUser }) {
         {/* This line sends the user to the about section on the same page. */}
         <button onClick={() => goToHomeSection("contact")}>Contact</button>
         {/* This line sends the user to the contact section on the same page. */}
-        {auth && <button onClick={() => setPage("dashboard")}>Dashboard</button>}
-        {/* This line shows Dashboard only after login. */}
+        {/* {auth && <button onClick={() => setPage("dashboard")}>Dashboard</button>}
+        This line shows Dashboard only after login. */}
       </div>
       {/* This line ends the navigation links container. */}
 

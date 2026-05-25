@@ -1,39 +1,22 @@
 .auth-page {
-  /* This line styles login and register pages. */
   align-items: center;
-  /* This line vertically centers the auth card. */
   background: #e7efe7;
-  /* This line gives auth pages a light green background. */
   display: flex;
-  /* This line lets the card center easily. */
   justify-content: center;
-  /* This line horizontally centers the auth card. */
   min-height: calc(100vh - 72px);
-  /* This line fills the screen under the navbar. */
   padding: 30px 18px;
-  /* This line adds spacing around the card. */
 }
 
 .auth-card {
-  /* This line styles the login/register card. */
   background: white;
-  /* This line gives the card a white background. */
   border: 1px solid #d8d0bd;
-  /* This line adds a card border. */
   border-radius: 8px;
-  /* This line rounds card corners. */
   box-shadow: 0 18px 38px rgba(37, 31, 21, 0.12);
-  /* This line adds a soft shadow. */
   display: grid;
-  /* This line stacks form controls. */
   gap: 14px;
-  /* This line adds space between form controls. */
   max-width: 460px;
-  /* This line limits the form width. */
   padding: 24px;
-  /* This line adds inner spacing. */
   width: 100%;
-  /* This line lets the form shrink on small screens. */
 }
 
 .auth-card h1 {

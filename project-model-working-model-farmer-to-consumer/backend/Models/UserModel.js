@@ -5,14 +5,9 @@ const UserSchema = new mongoose.Schema(
   {
     // This line starts the object that contains all user fields.
 
-    name: {
-      type: String,
-      required: true,
-      trim: true
-    },
+    name: {type: String, required: true, trim: true},
 
-    email: {
-      type: String,
+    email: {type: String,
       required: true,
       // This line says every user must have an email.
       unique: true,
@@ -22,27 +17,14 @@ const UserSchema = new mongoose.Schema(
       trim: true
     },
 
-    password: {
-      // This line creates the password field.
-      type: String,
-      // This line says the password value must be text.
-      required: true,
-      // This line says every user must have a password.
+    password: {type: String,required: true,
       minlength: 6
       // This line requires the password to have at least 6 characters.
     },
     
-    phone: {
-      // This line creates the phone field.
-      type: String,
-      // This line says the phone value must be text.
-      required: true,
-      // This line says every user must have a phone number.
-      trim: true
-    },
+    phone: {type: String,required: true,trim: true},
 
-    role: {
-      type: String,
+    role: {type: String,
       enum: ["farmer", "consumer"],
       // This line allows only farmer or consumer as role values.
       default: "consumer"

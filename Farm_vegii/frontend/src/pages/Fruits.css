@@ -1,0 +1,26 @@
+.fruits-page {
+  display: grid;
+  gap: 18px;
+}
+
+.fruits-header h2 {
+  margin: 0;
+}
+
+.fruits-header p {
+  color: var(--text-soft);
+}
+
+.fruits-flex-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.status-text {
+  margin: 24px 0;
+}
+
+.status-text.error {
+  color: #dc2626;
+}
