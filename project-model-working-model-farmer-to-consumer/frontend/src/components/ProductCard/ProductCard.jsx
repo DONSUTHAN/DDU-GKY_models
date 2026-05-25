@@ -26,7 +26,7 @@ function ProductCard({ product, auth, setPage }) {
         {/* This line shows the product description. */}
         <div className="product-meta">
           {/* This line creates product detail rows. */}
-          <span>KSh {product.price}</span>
+          <span>Rs {product.price}</span>
           {/* This line shows the product price. */}
           <span>{product.quantity} in stock</span>
           {/* This line shows available stock. */}

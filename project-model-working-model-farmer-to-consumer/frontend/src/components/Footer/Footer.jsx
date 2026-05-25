@@ -5,18 +5,15 @@ import "./Footer.css";
 
 const contactDetails = {
   // This line creates one place to update footer contact information.
-  phone: "+254 700 000 000",
-  // This line stores the phone number shown in the footer.
+  phone: "+919909945623",
   email: "support@thefarmvegi.com",
-  // This line stores the email shown in the footer.
-  address: "Nairobi Fresh Market, Kenya"
-  // This line stores the address shown in the footer.
+  address: "kozikode Fresh Market, india"
+
 };
 
 function Footer() {
   // This line creates the Footer component.
   return (
-    // This line starts the footer JSX.
     <footer className="footer">
       {/* This line creates the footer container. */}
       <div className="footer-brand">
@@ -28,7 +25,6 @@ function Footer() {
         <p>Fresh produce from farmers to consumers without extra middlemen.</p>
         {/* This line explains the app mission. */}
       </div>
-      {/* This line ends the footer brand area. */}
 
       <div className="footer-contact">
         {/* This line creates the footer contact area. */}

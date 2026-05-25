@@ -1,5 +1,4 @@
 .footer {
-  /* This line styles the footer container. */
   background: #173725;
   /* This line gives the footer a dark green background. */
   color: white;
@@ -66,9 +65,7 @@
 }
 
 @media (max-width: 760px) {
-  /* This line starts responsive footer styles. */
   .footer {
-    /* This line changes footer layout on small screens. */
     grid-template-columns: 1fr;
     /* This line stacks footer columns. */
   }
