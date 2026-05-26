@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
 
 const ReviewSchema = new mongoose.Schema(
-  // This line creates a schema that describes product reviews.
   {
-    // This line starts the object that contains all review fields.
     product: {
       type: mongoose.Schema.Types.ObjectId,
       // This line stores the MongoDB id of the reviewed product.

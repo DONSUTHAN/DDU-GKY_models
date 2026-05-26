@@ -16,11 +16,11 @@ const createOrder = async (req, res) => {
       return res.status(404).json({ message: "Product not found" });
     }
     // This line ends the product-not-found check.
+
     if (product.quantity < Number(quantity)) {
       // This line checks if the requested quantity is more than available stock.
       return res.status(400).json({ message: "Not enough stock available" });
     }
-    // This line ends the stock check.
 
     const totalPrice = product.price * Number(quantity);
     // This line calculates the order total price.
@@ -73,7 +73,6 @@ const getMyOrders = async (req, res) => {
     // This line sends the orders to the frontend.
   } catch (error) {
     res.status(500).json({ message: error.message });
-    // This line sends the error message to the frontend.
   }
 };
 // This line ends the getMyOrders controller.
@@ -94,14 +93,13 @@ const updateOrderStatus = async (req, res) => {
     if (!order) {
       // This line checks if no matching order was found.
       return res.status(404).json({ message: "Order not found" });
-      // This line sends a not-found error to the frontend.
     }
-    // This line ends the missing-order check.
+
+
     res.json(order);
     // This line sends the updated order to the frontend.
   } catch (error) {
     res.status(500).json({ message: error.message });
-    // This line sends the error message to the frontend.
   }
 };
 // This line ends the updateOrderStatus controller.

@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const ProductSchema = new mongoose.Schema(
   // This line creates a schema that describes products in the database.
   {
-    // This line starts the object that contains all product fields.
     name: {
       type: String,
       required: true,

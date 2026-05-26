@@ -1,8 +1,18 @@
 {
   "name": "farm-vegii-frontend",
+<<<<<<< HEAD
   "private": true,
   "version": "1.0.0",
   "type": "module",
+=======
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "vite.config.js",
+>>>>>>> 7628a1b93b97c35f0d76a04109b8e10c665faefa
   "scripts": {
     "dev": "vite",
     "build": "vite build",

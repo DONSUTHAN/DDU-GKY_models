@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const OrderSchema = new mongoose.Schema(
   // This line creates a schema that describes orders in the database.
   {
-    // This line starts the object that contains all order fields.
     product: {
       type: mongoose.Schema.Types.ObjectId,
       // This line stores the MongoDB id of the ordered product.
