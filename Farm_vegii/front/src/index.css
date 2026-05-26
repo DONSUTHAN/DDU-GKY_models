@@ -1,0 +1,46 @@
+/* Theme variables for light mode */
+:root {
+  --bg-main: #f5f7f2;
+  --bg-card: #ffffff;
+  --text-main: #132a13;
+  --text-soft: #3e5f49;
+  --accent: #2d6a4f;
+  --accent-alt: #40916c;
+  --border-soft: #d8e2dc;
+  --hero-overlay: rgba(10, 36, 23, 0.55);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Theme variables for dark mode */
+body.dark-theme {
+  --bg-main: #101a14;
+  --bg-card: #1c2b22;
+  --text-main: #f3f8f3;
+  --text-soft: #b2d0be;
+  --accent: #95d5b2;
+  --accent-alt: #74c69d;
+  --border-soft: #355645;
+  --hero-overlay: rgba(5, 14, 9, 0.65);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top right, #d8f3dc 0%, var(--bg-main) 55%);
+  color: var(--text-main);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background: radial-gradient(circle at top right, #1f3728 0%, var(--bg-main) 52%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
