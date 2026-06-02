@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -120,3 +121,16 @@ function App() {
 }
 
 export default App
+=======
+import React from 'react'
+import Navbar from './components/Navbar'
+const App = () => {
+  return (
+    <div>
+      <Navbar/>
+    </div>
+  )
+}
+
+export default App
+>>>>>>> 85d7b21166bf92e9ff9012b9d5cfcc8f249927ff

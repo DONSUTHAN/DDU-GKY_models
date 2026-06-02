@@ -28,18 +28,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         <div className="nav-center">
           <NavLink
-            to="/"
-            end
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`.trim()}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`.trim()}
-          >
-            About
-          </NavLink>
+            to="/" end  className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`.trim()}> Home</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`.trim()}> About</NavLink>
           <NavLink
             to="/contact"
             className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`.trim()}
