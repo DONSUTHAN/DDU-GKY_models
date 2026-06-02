@@ -7,7 +7,7 @@ const express = require ('express')
 
  app.use(express.json())
  app.use('/blog',BlogRoutes)
- app.use('/user',userRoutes)
+//  app.use('/user',userRoutes)
  
  const PORT = 3000
  
@@ -15,22 +15,3 @@ const express = require ('express')
     console.log(`${PORT} server runnnig`);
  })
 
-//  after editing package .json 
-//  "script " in this change the test to start and in quates" nodemon Server.json"
-//  then type npm nodemon  in the terminal then enter
-
-// download this things
-//     "dotenv": "^17.4.2",
-//     "express": "^5.2.1",
-//     "mongoose": "^9.5.0",
-//     "nodemon": "^3.1.14"
-//       bcrypt
-
-//to restart it," npm nodemon "
-// change the main:"index.js" to server.js to make the server to run server.js all the time 
-
-//restart after long time 
-//npx nodemon
-//before that install nodemon
-// npm nodemon i
-// i is install

@@ -63,18 +63,18 @@ const deletepost = async (req,res)=> {
     }
 }
 
-const createBlog = async (req,res) => {
-    const {title,description} = req.body
-    //removing author
-    try{
-        const newdata = await newBlog ({
-            title:description,
-            author:req.user.name
-        })
-    }catch(error){
-        res.status(500).json ({msg:"server error"})
-    }
-}
+// const createBlog = async (req,res) => {
+//     const {title,description} = req.body
+//     //removing author
+//     try{
+//         const newdata = await newBlog ({
+//             title:description,
+//             author:req.user.name
+//         })
+//     }catch(error){
+//         res.status(500).json ({msg:"server error"})
+//     }
+// }
 
 module.exports = {createpost,getposts,updatepost,deletepost}
 

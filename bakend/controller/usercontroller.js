@@ -39,7 +39,7 @@ const deletepost = async(req,res) => {
     try {
         const deletepost = await user.findByIdAndDelete(id)
         if (!deletepost) {
-            res.status(400).json({msg:"post not found"})
+            res.status(400).json({msg:"post not found"})    
         }
         res.status(200).json({msg:"delete done",data:deletepost})
     } catch (error) {
